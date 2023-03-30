@@ -7,7 +7,8 @@
 /* adjusting fonts */
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
+	color: red;
+	font-family: arial;
 	transition: background 500ms ease;
 }
 
