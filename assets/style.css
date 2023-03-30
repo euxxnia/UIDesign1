@@ -36,6 +36,10 @@ img {
 	height:  auto;
 }
 
+.cursive {
+	font-family: cursive;
+}
+
 /* uncomment the code below to set the grid */
 
 /*#grid {
