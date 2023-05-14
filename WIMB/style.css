@@ -22,6 +22,7 @@ p, li {
 }
 
 #bev{
+	color: lightgray;
 	font-style: italic;
 }
 
@@ -58,6 +59,14 @@ figcaption{
 
 figure:hover figcaption {
 	display: block;
+}
+
+#toreta{
+	display:none;
+}
+
+figure:hover #toreta{
+	display:block;
 }
 
 #carmex {
