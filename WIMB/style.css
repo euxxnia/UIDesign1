@@ -1,0 +1,91 @@
+* {
+	margin:  0px;
+	margin-top: 20px;
+	padding:  0px;
+	box-sizing: border-box;
+	background-color: #6A6A6A;
+}
+
+/* adjusting fonts */
+
+body {
+	color: white;
+	align-content: center;
+	margin: 20px;
+	font-family: arial;
+	transition: background 500ms ease;
+}
+
+p, li {
+	font-size:  15px;
+	line-height: 30px;
+}
+
+#bev{
+	font-style: italic;
+}
+
+/* adjusting spacing */
+
+h1 {
+	font-size: 30px;
+	margin-bottom:  20px;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+/*	background-color: gray;*/
+	display: inline-block;
+	align-content: center;
+	vertical-align: top;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	width: 23%;
+}
+
+figcaption{
+/*	margin-left: 10px;*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: white;
+	word-break: keep-all;
+	display: none;
+}
+
+figure:hover figcaption {
+	display: block;
+}
+
+#carmex {
+	color: #FFFF82;
+	background-color: #9D1430;
+	display: inline;
+}
+
+/* uncomment the code below to set the grid */
+
+/*#grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+body {
+	overflow: hidden;
+}
+
+.scroll {
+	padding:  20px;
+	overflow: scroll;
+	height: 100vh;
+}
+
+#left-column {
+}
+
+#right-column {
+	background: #333;
+}*/
