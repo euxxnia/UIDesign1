@@ -1,0 +1,86 @@
+* {
+	margin:  0px;
+	margin-top: 20px;
+	padding:  0px;
+	box-sizing: border-box;
+	background-color: white;
+}
+
+/* adjusting fonts */
+
+body {
+	color: black;
+	align-content: center;
+	margin: 0px;
+	margin-left: 400px;
+	font-family: arial;
+	transition: background 500ms ease;
+	--accent-color: rgb(0,0,255);
+}
+
+p {
+	font-size:  15px;
+	line-height: 30px;
+}
+
+h3{
+	font-weight: initial;
+}
+
+#align {
+	display: flex;
+  align-items: center;
+  justify-content: center;	
+  height: 100vh;
+}
+
+#stage {
+	width: 900px;
+	height: 556px;
+	margin: auto;
+	background: #706856;
+	position: relative;
+}
+
+
+#body{
+	width: 200px;
+	height: 400px;
+	background-color: gray;
+	top: 394px;
+	left: 240px;
+	position: absolute;
+}
+
+
+
+button{
+	font-size: 1rem;
+	font-weight: bold;
+	border: 2px solid var(--accent-color);
+	background: transparent;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border-radius: 5px;
+}
+
+#save {
+	margin-left: 200px;
+	border: 2px solid var(gray);
+}
+
+button:hover{
+	background: rgb(200 200 200);
+	cursor: pointer;
+}
+
+
+/*	DARK MODE STYLES GO HERE */
+
+body.darkmode {
+	background: black;
+	color: white;
+
+	/*	redefine a CSS variable */
+	--accent-color: rgb(0,255,0);
+}

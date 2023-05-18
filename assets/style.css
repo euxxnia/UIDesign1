@@ -7,7 +7,9 @@
 /* adjusting fonts */
 
 body {
-	color: red;
+	margin: 20px;
+	margin-left: 30px;
+	color: black;
 	font-family: arial;
 	transition: background 500ms ease;
 }
@@ -23,9 +25,19 @@ p, li {
 	padding: 20px;
 }
 
-h1, p {
-	margin-bottom:  20px;
+h1{
+	margin-bottom:  30px;
 }
+
+p{
+	margin-bottom: 10px;
+}
+
+h3{
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
 
 ul, ol {
 	margin-left: 20px;
@@ -33,12 +45,19 @@ ul, ol {
 
 img {
 	max-width: 100%;
+	margin-bottom: 10px;
 	height:  auto;
 }
 
 .cursive {
 	font-family: cursive;
 }
+
+li {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
 
 /* uncomment the code below to set the grid */
 
