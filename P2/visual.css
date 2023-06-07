@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+div{
+    text-align: center;
+}
+
+p{
+    font-family: 'Inter',Arial;
+}
+
+#wireframe{
+    color: gray;
+    width: 60vw;
+    height: 40vw;
+    background-color: #E4E4E4;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#darkmode{
+    position: fixed;
+    bottom: 20px;
+    left: 88%;
+    /* transform: translateX(-50%); */
+	font-size: 1rem;
+	border: 1px solid gray;
+	background: transparent;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border-radius: 0px;
+}
+
+button:hover{
+	background: rgb(200 200 200);
+	cursor: pointer;
+    color: white;
+}
+
+
+/*	DARK MODE STYLES GO HERE */
+
+body.darkmode {
+	background: black;
+	color: white;
+
+	/*	redefine a CSS variable */
+	--accent-color: rgb(0,255,0);
+}
+
+#wireframe.darkmode{
+    color: gray;
+}
+
+.q {
+    font-family: 'Inter',Arial;
+    text-align: center;
+    height: 6vw;
+    padding-top: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+
+}
+
+#top{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 250%;
+}
+
+#setting{
+    position: fixed;
+    bottom: 20px;
+    left: 81%;
+    /* transform: translateX(-50%); */
+	font-size: 1rem;
+	border: 1px solid gray;
+	background: transparent;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border-radius: 0px;
+}

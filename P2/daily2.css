@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 30vw;
+    /* text-align: center; */
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+.cell1 {
+    width: 10vw; /* 각 셀의 너비 설정 */
+    height: 10vw; /* 각 셀의 높이 설정 */
+    border: 1px solid black; /* 셀의 테두리 스타일 설정 */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cell2 {
+    width: 10vw; /* 각 셀의 너비 설정 */
+    height: 10vw; /* 각 셀의 높이 설정 */
+    border: 1px solid black; /* 셀의 테두리 스타일 설정 */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cell3 {
+    width: 10vw; /* 각 셀의 너비 설정 */
+    height: 10vw; /* 각 셀의 높이 설정 */
+    border: 1px solid black; /* 셀의 테두리 스타일 설정 */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.q {
+    font-family: 'Inter',Arial;
+    text-align: center;
+    height: 6vw;
+    padding-top: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+
+}
+
+.g {
+    font-family: 'Inter',Arial;
+    text-align: center;
+    padding: 0.5vw;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+#top{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 250%;
+}
+
+.done{
+    margin: 5vh;
+    font-size: 15px;
+    background-color: white;
+}
+
+#darkmode{
+    position: fixed;
+    bottom: 20px;
+    left: 88%;
+    /* transform: translateX(-50%); */
+	font-size: 1rem;
+	border: 1px solid gray;
+	background: transparent;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border-radius: 0px;
+}
+
+#setting{
+    position: fixed;
+    bottom: 20px;
+    left: 81%;
+    /* transform: translateX(-50%); */
+	font-size: 1rem;
+	border: 1px solid gray;
+	background: transparent;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border-radius: 0px;
+}
+
+button:hover{
+	background: rgb(200 200 200);
+	cursor: pointer;
+    color: white;
+}
+
+
+/*	DARK MODE STYLES GO HERE */
+
+body.darkmode {
+	background: black;
+	color: white;
+
+	/*	redefine a CSS variable */
+	--accent-color: rgb(0,255,0);
+}
+
+.cell1.active {
+    border: 3px solid blue; /* 셀의 테두리 스타일 설정 */
+}
+
+.cell2.active {
+    border: 3px solid blue; /* 셀의 테두리 스타일 설정 */
+}
+
+.cell3.active {
+    border: 3px solid blue; /* 셀의 테두리 스타일 설정 */
+}
+
