@@ -1,0 +1,326 @@
+@font-face {
+  font-family: 'Monda';
+  src: url('Monda-Regular.ttf');
+}
+
+a:visited {
+  color: inherit;
+}
+
+.mac-book-pro-14-2,
+.mac-book-pro-14-2 * {
+  box-sizing: border-box;
+}
+.mac-book-pro-14-2 {
+  background: #f4f4f4;
+  width: 1512px;
+  height: 982px;
+  position: relative;
+  overflow: hidden;
+}
+.rectangle-1 {
+  background: #000000;
+  width: 756px;
+  height: 10px;
+  position: absolute;
+  left: 755px;
+  top: 219px;
+}
+.ascii-town {
+  color: #898989;
+  text-align: left;
+  font: 400 40px "Monda", sans-serif;
+  position: absolute;
+  left: 772px;
+  top: 366px;
+}
+.dark-light {
+  color: #adadad;
+  text-align: left;
+  font: 400 28px "Monda", sans-serif;
+  position: absolute;
+  left: calc(50% - 97px);
+  top: 904px;
+}
+.still-life-css {
+  color: #898989;
+  text-align: left;
+  font: 400 40px "Monda", sans-serif;
+  position: absolute;
+  left: 772px;
+  top: 439px;
+}
+.project-1-lightcal-figma {
+  color: #000000;
+  text-align: left;
+  font: 400 40px "Monda", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 337px;
+  top: 525px;
+}
+.project-2-your-emotion-friend-website {
+  color: #000000;
+  text-align: left;
+  font: 400 40px "Monda", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 229px;
+  top: 720px;
+}
+.what-s-in-my-bag {
+  color: #747474;
+  text-align: left;
+  font: 400 40px "Monda", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 735px;
+  top: 657px;
+}
+.light-road-1 {
+  width: 756px;
+  height: 202px;
+  position: absolute;
+  left: 0px;
+  top: 95px;
+}
+.ascii-left {
+  background: #898989;
+  width: 781px;
+  height: 4px;
+  position: absolute;
+  left: -1px;
+  top: 405px;
+}
+.ascii-right {
+  background: #898989;
+  width: 549px;
+  height: 4px;
+  position: absolute;
+  left: 1026px;
+  top: 405px;
+}
+.still-l {
+  background: #898989;
+  width: 781px;
+  height: 4px;
+  position: absolute;
+  left: -4px;
+  top: 482px;
+}
+.still-r {
+  background: #898989;
+  width: 549px;
+  height: 4px;
+  position: absolute;
+  left: 1071px;
+  top: 482px;
+}
+.p-1-l {
+  background: #000000;
+  width: 345px;
+  height: 4px;
+  position: absolute;
+  left: -3px;
+  top: 559px;
+}
+.p-1-r {
+  background: #000000;
+  width: 723px;
+  height: 4px;
+  position: absolute;
+  left: 937px;
+  top: 559px;
+}
+.wimb-l {
+  background: #747474;
+  width: 775px;
+  height: 4px;
+  position: absolute;
+  left: -36px;
+  top: 677px;
+}
+.wimb-r {
+  background: #747474;
+  width: 549px;
+  height: 4px;
+  position: absolute;
+  left: 1143px;
+  top: 677px;
+}
+.p-2-l {
+  background: #000000;
+  width: 238px;
+  height: 4px;
+  position: absolute;
+  left: -3px;
+  top: 754px;
+}
+.p-2-r {
+  background: #000000;
+  width: 560px;
+  height: 4px;
+  position: absolute;
+  left: 1160px;
+  top: 754px;
+}
+
+body{
+  background: #f4f4f4;
+}
+
+body.darkmode {
+	background: #262626;
+	color: white;
+
+	/*	redefine a CSS variable */
+	--accent-color: rgb(0,255,0);
+}
+
+
+.mac-book-pro-14-2.darkmode {
+  background: #262626;
+  width: 1512px;
+  height: 982px;
+  position: relative;
+  overflow: hidden;
+}
+.rectangle-1.darkmode {
+  background: #e1e1e1;
+  width: 756px;
+  height: 10px;
+  position: absolute;
+  left: 755px;
+  top: 219px;
+}
+.ascii-town.darkmode {
+  color: #898989;
+  text-align: left;
+  font: 400 40px "Monda", sans-serif;
+  position: absolute;
+  left: 772px;
+  top: 366px;
+}
+
+.still-life-css.darkmode {
+  color: #898989;
+  text-align: left;
+  font: 400 40px "Monda", sans-serif;
+  position: absolute;
+  left: 772px;
+  top: 439px;
+}
+.project-1-lightcal-figma.darkmode {
+  color: #ffffff;
+  text-align: left;
+  font: 400 40px "Monda", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 337px;
+  top: 525px;
+}
+.project-2-your-emotion-friend-website.darkmode {
+  color: #ffffff;
+  text-align: left;
+  font: 400 40px "Monda", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 229px;
+  top: 720px;
+}
+.what-s-in-my-bag.darkmode {
+  color: #bebebe;
+  text-align: left;
+  font: 400 40px "Monda", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 735px;
+  top: 657px;
+}
+.ascii-left.darkmode {
+  background: #898989;
+  width: 781px;
+  height: 4px;
+  position: absolute;
+  left: -1px;
+  top: 405px;
+}
+.ascii-right.darkmode {
+  background: #898989;
+  width: 549px;
+  height: 4px;
+  position: absolute;
+  left: 1026px;
+  top: 405px;
+}
+.still-l.darkmode {
+  background: #898989;
+  width: 781px;
+  height: 4px;
+  position: absolute;
+  left: -4px;
+  top: 482px;
+}
+.still-r.darkmode {
+  background: #898989;
+  width: 549px;
+  height: 4px;
+  position: absolute;
+  left: 1071px;
+  top: 482px;
+}
+.p-1-l.darkmode {
+  background: #ffffff;
+  width: 345px;
+  height: 4px;
+  position: absolute;
+  left: -3px;
+  top: 559px;
+}
+.p-1-r.darkmode {
+  background: #ffffff;
+  width: 723px;
+  height: 4px;
+  position: absolute;
+  left: 937px;
+  top: 559px;
+}
+.wimb-l.darkmode {
+  background: #bebebe;
+  width: 775px;
+  height: 4px;
+  position: absolute;
+  left: -36px;
+  top: 677px;
+}
+.wimb-r.darkmode {
+  background: #bebebe;
+  width: 549px;
+  height: 4px;
+  position: absolute;
+  left: 1143px;
+  top: 677px;
+}
+.p-2-l.darkmode {
+  background: #ffffff;
+  width: 238px;
+  height: 4px;
+  position: absolute;
+  left: -3px;
+  top: 754px;
+}
+.p-2-r.darkmode {
+  background: #ffffff;
+  width: 560px;
+  height: 4px;
+  position: absolute;
+  left: 1160px;
+  top: 754px;
+}
+.dark-road-1.darkmode {
+  width: 756px;
+  height: 202px;
+  position: absolute;
+  left: 0px;
+  top: 95px;
+}
