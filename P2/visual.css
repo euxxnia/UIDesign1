@@ -5,12 +5,17 @@
     font-style: normal;
 }
 
+body{
+    background: black;
+}
+
 div{
     text-align: center;
 }
 
 p{
     font-family: 'Inter',Arial;
+    color: #E4E4E4;
 }
 
 #wireframe{

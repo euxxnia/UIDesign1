@@ -112,9 +112,14 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-
+// cell 클릭 시
 document.addEventListener("DOMContentLoaded", function(){
+	const doneButton = document.querySelector('.done');
+
+	let selectedImages = [];
+
 	const cells1 = document.querySelectorAll('.cell1');
+
 
 	cells1.forEach(cell => {
 		cell.addEventListener("click",function(){
@@ -122,6 +127,7 @@ document.addEventListener("DOMContentLoaded", function(){
 				cell.classList.remove('active');
 			});
 			this.classList.add('active');
+			selectedImages[0] = Array.from(cells1).indexOf(this);
 		});
 	});
 
@@ -133,6 +139,7 @@ document.addEventListener("DOMContentLoaded", function(){
 				cell.classList.remove('active');
 			});
 			this.classList.add('active');
+			selectedImages[1] = Array.from(cells2).indexOf(this);
 		});
 	});
 
@@ -144,7 +151,12 @@ document.addEventListener("DOMContentLoaded", function(){
 				cell.classList.remove('active');
 			});
 			this.classList.add('active');
+			selectedImages[2] = Array.from(cells3).indexOf(this);
 		});
+	});
+
+	doneButton.addEventListener("click", function(){
+		sessionStorage.setItem("selectedImages", JSON.stringify(selectedImages))
 	});
 });
 
@@ -160,6 +172,9 @@ document.addEventListener("DOMContentLoaded", function() {
 	a1.style.color = "black";
 	a2.classList.remove("bold");
 	a2.classList.add("strike-through");
+
+	localStorage.setItem("modeSelection", "0");
+
 	setTimeout(function() {
 		const url = "intro.html";
 		window.location.href = url;
@@ -171,6 +186,9 @@ document.addEventListener("DOMContentLoaded", function() {
 	a2.style.color = "black";
 	a1.classList.remove("bold");
 	a1.classList.add("strike-through");
+
+	localStorage.setItem("modeSelection", "1");
+	
 	setTimeout(function() {
 		const url = "intro.html";
 		window.location.href = url;

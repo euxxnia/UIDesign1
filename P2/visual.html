@@ -14,29 +14,56 @@
 </head>
 
 <body>
+  <div>
+    <section>
+      <div>
+        <p class="q">23/06/<span id="date"></span><br /><span id="top">This is for you...</span></p>
+      </div>
+      <div>
+        <!-- <div id="wireframe">
+          <p>(Where Processing will be embedded..)<br /><br />
+            <canvas id="myCanvas"></canvas>
+          </p>
+        </div> -->
+        <button id="darkmode">Dark Mode</button>
+        <button id="setting">Setting</button>
+      </div>
+    </section>
+  </div>
 
-<div>
-  <section>
+  <script>
+    // 세션 스토리지에서 선택된 이미지 정보 가져오기
+    const selectedImages = JSON.parse(sessionStorage.getItem("selectedImages"));
 
-    <div>
-        <p class="q">23/06/<span id="date"></span><br/><span id="top">This is for you...</span>
-        </p>
-    </div>
+    // 이미지 경로를 생성하는 함수
+    function getImagePath(h, t, c) {
+      let fileName = `H${h}T${4-t}C${4-c}.png`;
+      if (localStorage.getItem("modeSelection") === "1") {
+        fileName = `H${4-h}T${t}C${c}.png`;
+      }
+      return `htcs/${fileName}`;
+    }
 
-    <div>
-        <div id="wireframe">
-         <p>(Where Processing will be embedded..)<br/><br/>
-            <canvas id="myCanvas"></canvas></p>
+    // 이미지를 동적으로 생성하고 화면에 추가하는 함수
+    function addImageToPage(imageIndex) {
+      const h = Math.floor(imageIndex / 25);
+      const t = Math.floor((imageIndex % 25) / 5);
+      const c = (imageIndex % 25) % 5;
+      const imagePath = getImagePath(h, t, c);
+      const image = new Image();
+      image.src = imagePath;
+      image.style.display = "block";
+      image.style.margin = "0 auto";
+      image.style.width = "25vw"; // 조정할 가로 크기 (vw 단위)
+      document.body.appendChild(image);
+    }
 
-        </div>
-      <button id="darkmode">Dark Mode</button>
-      <button id="setting">Setting</button>
-    </div>
-
-
-  </section>
-
-</div>
-
+    // 선택된 이미지에 대해 이미지를 추가합니다.
+    if (selectedImages && selectedImages.length === 3) {
+      const imageIndex = selectedImages[0] * 25 + selectedImages[1] * 5 + selectedImages[2];
+      addImageToPage(imageIndex);
+    }
+  </script>
 </body>
+
 </html>
