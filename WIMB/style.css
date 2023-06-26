@@ -1,9 +1,25 @@
+@font-face {
+	font-family: 'komika';
+	src: url("KOMIKAX_.ttf");
+}
+
 * {
 	margin:  0px;
 	margin-top: 20px;
 	padding:  0px;
 	box-sizing: border-box;
 	background-color: #6A6A6A;
+}
+
+h1{
+	margin-top: 50px;
+	text-align: center;	
+	font-family: 'komika', Arial, Helvetica, sans-serif;
+}
+
+p{
+	text-align: right;
+	margin-right: 50px;
 }
 
 /* adjusting fonts */
